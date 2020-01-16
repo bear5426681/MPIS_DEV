@@ -62,7 +62,11 @@ namespace FCFDFE.pages.MPMS.B
         {
             //回物資申請書編制作業按鈕功能
             string url = "~/pages/MPMS/B/MPMS_B13.aspx?PurchNum=" + Request.QueryString["PurchNum"].ToString();
-            Response.Redirect(url);
+            if (strOVC_IKIND.Equals("D"))
+            {
+                url = "~/pages/MPMS/B/MPMS_B13.aspx?PurchNum=" + Request.QueryString["PurchNum"].ToString()+"&Tab=second";
+            }
+                Response.Redirect(url);
         }
         
         protected void btn_change_Click(object sender, EventArgs e)

@@ -303,6 +303,7 @@ namespace FCFDFE.pages.MPMS.B
                 if (Request.QueryString["PurchNum"] != null)
                 {
                     strPurchNum = Request.QueryString["PurchNum"];
+
                     if (!IsPostBack)
                     {
                         //txtOVC_AGNT_IN_SHOW_IN 內購計畫清單 txtOVC_AGNT_IN_SHOW 外購計畫清單的採購單位

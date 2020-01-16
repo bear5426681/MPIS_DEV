@@ -365,7 +365,7 @@ namespace FCFDFE.pages.MPMS.B
         {
             //回物資申請書
             string send_urlUse;
-            send_urlUse = "~/pages/MPMS/B/MPMS_B13.aspx?PurchNum=" + strPurchNum;
+            send_urlUse = "~/pages/MPMS/B/MPMS_B13.aspx?PurchNum=" + strPurchNum+"&Tab=second";
             Response.Redirect(send_urlUse);
         }
 

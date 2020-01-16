@@ -6,8 +6,25 @@
         $(document).ready(function () {
             $("<%=strMenuName%>").addClass("active");
             $("<%=strMenuNameItem%>").addClass("active");
-       });
-    </script>
+            
+
+            function getUrlParam(Tab) {
+                var reg = new RegExp("(^|&)" + Tab + "=([^&]*)(&|$)"); 
+                var r = window.location.search.substr(1).match(reg);  
+                if (r != null)
+                   return unescape(r[2]);
+                return null; 
+            }
+            if (getUrlParam('Tab') == "second") {
+                document.getElementById("MainContent_pageSecond").className = 'active';
+                document.getElementById("second").className = 'tab-pane active';
+                document.getElementById("MainContent_pageOne").className = ' ';
+                document.getElementById("first").className = 'tab-pane';
+                
+            }
+        });
+
+   </script>
     <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server"></asp:ScriptManagerProxy>
     <div class="row">
         <div style="width: 1000px; margin: auto;">

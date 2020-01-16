@@ -150,7 +150,7 @@ namespace FCFDFE.pages.MPMS.B
         protected void btnReturn_Click(object sender, EventArgs e)
         {
             string send_urlUse;
-            send_urlUse = "~/pages/MPMS/B/MPMS_B13.aspx?PurchNum=" + Request.QueryString["PurchNum"];
+            send_urlUse = "~/pages/MPMS/B/MPMS_B13.aspx?PurchNum=" + Request.QueryString["PurchNum"]+ "&Tab=second";
             Response.Redirect(send_urlUse);
         }
 

@@ -42,7 +42,7 @@
                                 </tr>
                             </table>
                             <div class="text-center">
-                                <asp:Button ID="btnReturn" CssClass="btn-warning" runat="server" OnClick="btnReturn_Click" Text="回物資申請書編制作業" />
+                                <asp:Button ID="btnReturn" CssClass="btn-warning" runat="server" OnClick="btnReturn_Click" Text="回採購計畫清單編制作業" />
                             </div>
                             <p></p>
                             <table class="table table-bordered">
