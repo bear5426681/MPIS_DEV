@@ -1016,6 +1016,7 @@ namespace FCFDFE.pages.MPMS.B
         {
             //異動按鈕
             btnModify.Visible = true;
+            btnSave.Visible = false;
             Button btn = (Button)sender;
             GridViewRow gvr = (GridViewRow)btn.NamingContainer;
             txtOVC_POI_IBDG.Text = gvr.Cells[1].Text;
